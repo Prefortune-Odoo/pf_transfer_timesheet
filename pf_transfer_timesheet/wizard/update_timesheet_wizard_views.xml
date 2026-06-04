@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_update_timesheet_wizard_form" model="ir.ui.view">
+        <field name="name">update.timesheet.wizard.form</field>
+        <field name="model">update.timesheet.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Update Timesheets">
+                <group col="4">
+                    <field name="project_id" options="{'no_create': True}"/>
+                    <field name="task_id" options="{'no_create': True}"/>
+                </group>
+                <footer>
+                    <button name="action_update_timesheet" type="object" string="UPDATE TIMESHEET" class="btn-primary" icon="fa-pencil-square-o" data-hotkey="q"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
