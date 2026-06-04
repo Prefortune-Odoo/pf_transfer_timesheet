@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Explicitly remove the privilege to move the group to Extra Rights -->
+    <delete model="res.groups.privilege" id="res_groups_privilege_update_timesheet"/>
+
+    <record id="group_update_timesheet_project_task" model="res.groups">
+        <field name="name">Update Timesheet Project Task</field>
+        <!-- Unset the privilege_id to move it to Extra Rights section -->
+        <field name="privilege_id" eval="False"/>
+        <field name="comment">Allow user to bulk update Project and Task on timesheets.</field>
+    </record>
+</odoo>
