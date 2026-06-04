@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_update_timesheet_wizard,update.timesheet.wizard,model_update_timesheet_wizard,group_update_timesheet_project_task,1,1,1,1
